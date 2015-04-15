@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+header {
+    padding: 10px;
+    background: linear-gradient(135deg, #FFC59B 4%, #DA5880 23%, #D36767 86%);
+}
+
+header h1 {
+    display: inline;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    // color: #06DB8A;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    // text-shadow: 2px 2px 2px #000;
+}
+
+header button {
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.sp {
+    float: left;
+    padding: 10px;
+}
+
+.files {
+    width: 500px;
+    position: absolute;
+    right: 10px;
+    border: 1px solid;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 70px;
+}
+
+.load-session-input {
+    position: absolute;
+    left: -1500px;
+}
+
+.btn {
+    color: white;
+}

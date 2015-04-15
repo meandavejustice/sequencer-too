@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/morph-search.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="node_modules/react-tabs/lib/styles.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  }
+.ReactModal__Content {
+  width: 600px;
+margin: 30px auto;
+}
+
+  a { text-decoration: none; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <header>
+
+          <div>
+            <canvas id="fft" width="150" height="40"></canvas>
+            <h1>Sequencer</h1>
+
+            <button class="btn btn--m btn--gray-border upload">Upload Sound</button>
+            <button class="btn btn--m btn--gray-border record">Record Sound</button>
+            <button class="btn btn--m btn--gray-border load-session">Load Session</button>
+            <button class="btn btn--m btn--gray-border new-sequence">Create New Sequence</button>
+            <button class="btn btn--m btn--gray-border save-session">Save Session</button>
+            <input type="file" class="load-session-input"/>
+          </div>
+        </header>
+        <div class="sp"></div>
+        <div class="files"></div>
+        <div>
+          <canvas id="fftime" width="1200" height="250"></canvas>
+        </div>
+
+        <div id="morphsearch" class="morphsearch">
+				  <form class="morphsearch-form">
+					  <input class="morphsearch-input query" type="search"
+				           placeholder="Search freesound.org"/>
+					  <button class="morphsearch-submit" type="submit">Search</button>
+				  </form>
+				  <div class="morphsearch-content">
+					  <div class="dummy-column">
+						  <h2>Tracks</h2>
+					  </div>
+					  <div class="dummy-column">
+						  <h2>Tracks</h2>
+					  </div>
+					  <div class="dummy-column">
+						  <h2>Tracks</h2>
+					  </div>
+				  </div><!-- /morphsearch-content -->
+				  <span class="morphsearch-close"></span>
+			  </div><!-- /morphsearch -->
+      </div>
+
+      <script type="text/javascript" src="bundle.js"></script>
+      <noscript>
+        You gotta enable javaScript to use this, neckbeard.
+      </noscript>
+    </body>
+</html>

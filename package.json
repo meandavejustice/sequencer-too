@@ -1,0 +1,49 @@
+{
+  "name": "sequencer-too",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "expose-bucket": "expose-s3 ./config.json",
+    "watch-js": "watchify -o bundle.js -t babelify -v -d app.js",
+    "start": "npm run expose-bucket & npm run watch-js & nodemon server.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "author": "meandave",
+  "license": "BSD",
+  "dependencies": {
+    "accountdown": "^4.0.1",
+    "accountdown-basic": "^1.0.0",
+    "audio-clock": "^0.1.1",
+    "audio-fft": "^0.1.0",
+    "audiocontext": "^0.1.0",
+    "audiosource": "^0.1.1",
+    "aws-sdk": "^2.1.21",
+    "babel": "^4.7.8",
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "colorplane-react": "^2.0.0",
+    "colr": "^1.2.1",
+    "expose-s3": "^0.1.0",
+    "level-prebuilt": "^0.18.0-3",
+    "multiparty": "^4.1.1",
+    "observed": "^1.1.1",
+    "react": "^0.12.2",
+    "react-art": "^0.12.1",
+    "react-bpm": "^1.0.0",
+    "react-modal": "^0.1.0",
+    "react-number-editor": "^2.1.0",
+    "react-tabs": "^0.1.2",
+    "routes-router": "^4.1.2",
+    "s3-upload-stream": "^1.0.7",
+    "st": "^0.5.3",
+    "tachyons": "^1.2.0",
+    "tree-view": "^2.2.0",
+    "watchify": "^2.4.0"
+  }
+}

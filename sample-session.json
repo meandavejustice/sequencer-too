@@ -1,0 +1,35 @@
+{
+  "sequences": [
+    {
+      "id": "d04e1f4b",
+      "active": false,
+      "activeColor": "#E6A2DB",
+      "bpm": 120,
+      "tracks": {
+        "dcd75575": {
+          "id": "dcd75575",
+          "url": "http://localhost:8441/industrial/musicradar-industrial-samples/Kit02 140bpm/Drums/Hits/HitAK02-Kik.wav",
+          "title": "HitAK02-Kik.wav",
+          "sequence": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

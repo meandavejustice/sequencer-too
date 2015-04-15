@@ -1,0 +1,7 @@
+{
+  "accessKeyId": "AWS_ACCESS_KEY_ID",
+  "secretAccessKey": "AWS_ACCESS_KEY_SECRET",
+  "region": "us-west-2",
+  "bucket": "S3_BUCKET_NAME",
+  "port": 7777
+}
